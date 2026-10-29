@@ -111,7 +111,14 @@ The core platform is built around four focused commercial pillars:
 * Set general location to **Norwood, Ontario** (exact street address sent with appointment/order confirmation).
 * Replaced shop hours with **By Appointment Only**.
 
-### 7. Lead Magnet Documentation
+### 7. Product Photography & Weddings Showcase Repositioning
+* **Authentic Baker's Box Imagery:** Generated high-resolution, luxury commercial photography of the Monthly Baker's Box showing an authentic kraft-boxed assortment containing exactly **6 giant New York-style stuffed cookies and 6 Belgian dark chocolate fudge brownies** (12 treats total) with parchment lining and baker's twine.
+* **Grand Bespoke Wedding Cake Hero:** Replaced the generic cake imagery with an opulent 3-tier textured white wedding cake with cascading fresh florals, styled at a warm Ontario timber reception venue with glowing taper candles.
+* **Repositioned Weddings Flow:**
+  - Placed the **Investment & Pricing Guide** ($150 cutting cakes, $450+ 2-3 tier cakes, $275+ croquembouche, $4.50+/guest sweet tables) and **Wedding Date Inquiry Form** front-and-centre directly following the visual portfolio gallery.
+  - Repositioned the **$45 Quarterly Tasting Box** as *"Step 1: Sample Flavours At Home Before Booking"* to ensure visitors recognize that bespoke multi-tiered wedding cakes are the core custom offering, rather than assuming The CakeHouse only provides tasting boxes.
+
+### 8. Lead Magnet Documentation
 * Authored [`HOW_TO_MANAGE_LEAD_MAGNET.md`](file:///c:/Users/scott/OneDrive/Consulting%20Business/Cakehouse/HOW_TO_MANAGE_LEAD_MAGNET.md) giving Tammy clear, non-technical instructions on where and how to swap the *Oreo Brookie* recipe PDF in both Wix and Shopify.
 
 ---
@@ -122,6 +129,10 @@ The core platform is built around four focused commercial pillars:
 ```
 📁 ~/the-cakehouse-bakery (Linux Local Git Repository)
 │
+├── assets/
+│   └── images/
+│       ├── bakers-box.jpg             <-- 6 Stuffed Cookies + 6 Brownies Kraft Box
+│       └── bespoke-wedding-cake.jpg   <-- Opulent 3-tier Reception Wedding Cake
 ├── index.html                         <-- Complete, verified prototype with Weddings Showcase
 ├── PROJECT_STATUS.md                  <-- Master project summary & roadmap (this document)
 ├── HOW_TO_MANAGE_LEAD_MAGNET.md       <-- Tammy's guide for updating recipe PDFs & automations
@@ -145,9 +156,12 @@ The core platform is built around four focused commercial pillars:
 ### Publishing to GitHub Pages:
 Run the following in the `scottcarpentier@penguin` terminal:
 ```bash
+mkdir -p ~/the-cakehouse-bakery/assets/images
+cp /home/scottcarpentier/.gemini/antigravity/brain/4bd08093-1526-4cc6-93c7-818f36c83665/bakers_box_cakehouse_png_1793284985297.jpg ~/the-cakehouse-bakery/assets/images/bakers-box.jpg
+cp /home/scottcarpentier/.gemini/antigravity/brain/4bd08093-1526-4cc6-93c7-818f36c83665/bespoke_wedding_cake_png_1793285010909.jpg ~/the-cakehouse-bakery/assets/images/bespoke-wedding-cake.jpg
 cd ~/the-cakehouse-bakery
-git add index.html PROJECT_STATUS.md
-git commit -m "feat: complete weddings showcase microsite, masonry gallery & wayward gent modal"
+git add .
+git commit -m "feat: updated baker's box photo (6 cookies + 6 brownies) and grand wedding reception cake hero"
 git push origin main
 ```
 This deploys live in ~45 seconds to `https://scottrepository.github.io/the-cakehouse-bakery/`.
