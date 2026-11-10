@@ -165,3 +165,38 @@ git commit -m "feat: updated baker's box photo (6 cookies + 6 brownies) and gran
 git push origin main
 ```
 This deploys live in ~45 seconds to `https://scottrepository.github.io/the-cakehouse-bakery/`.
+
+---
+
+## 3. November 9, 2026 Strategy Session Alignment (Tam & Scott Review)
+
+Following our strategy recording and review session with Tam on November 9, 2026, the prototype was restructured to align with her exact operational model, platform division, and customer separation:
+
+### 1. Restructured Umbrella Navigation
+* **Cake House Weddings:** Replaced cluttered menu bars with a focused boutique wedding experience.
+* **Cake House School:** Dedicated home for hands-on cookie and cake decorating workshops held at Norwood Town Hall ($60/seat with automated 5-seat urgency trigger).
+* **Cake House Pantry:** Unified e-commerce storefront for scalable pre-orders, Canada-wide subscriptions, and artisan bar provisions.
+* **Sticky Quick-Jump Bar in Weddings:** Fast one-click navigation across `✦ Featured Showpieces`, `🎂 Flavors & Fillings`, `📋 Investment Guide`, `🎁 Tasting Box ($45)`, and `✉️ Date Inquiry`.
+
+### 2. Dedicated Cake Flavors & Artisanal Fillings Showcase
+* Added comprehensive interactive flavors section featuring 8 signature combinations:
+  1. Madagascar Bourbon Vanilla Bean (Strawberry blossom compote)
+  2. Dark Chocolate Decadence (Valrhona dark cocoa, salted caramel & ganache)
+  3. Meyer Lemon & Wild Blueberry (Citrus sponge, Ontario blueberry reduction)
+  4. Spiced Carrot & Toasted Pecan (Cream cheese Swiss meringue, spiced apple)
+  5. Earl Grey Lavender Honey (Bergamot infusion, local Kawartha honey)
+  6. Almond Amaretto Raspberry (Amaretto genoise, tart raspberry coulis)
+  7. Vegan Dark Chocolate Ganache (100% plant-based, dairy & egg-free)
+  8. Flourless Almond & Citrus (Non-celiac gluten-friendly)
+* Interactive category filters: *All Pairings*, *Signature Pairings*, *Citrus & Fruit*, *Decadent & Spiced*, *Vegan & Gluten-Friendly*.
+* Direct bridge to order the quarterly $45 Tasting Box (ships Canada-wide or Norwood pickup).
+
+### 3. Unified Cake House Pantry Storefront
+* **Streamlined Baker's Box Subscription:** Simplified to **1 single standard monthly subscription** ($48.00/mo, cancel or pause anytime) to eliminate fulfillment confusion, plus a One-Time Gift Box option ($52.00).
+* **Bi-Weekly Everyday Drops (Local Pickup Only):** Brioche Cinnamon Buns ($24 classic 6-pack / $28 gourmet assorted) and Market Cookies ($22 6-pack) strictly for Norwood studio pickup.
+* **Artisan Bar Provisions:** Wayward Gent cocktail infusion jars ($18) and handcrafted glass rimmers ($10).
+* **Cross-Navigation Bridge:** Banner guiding wedding and class shoppers back to the consultation site.
+
+### 4. 10% Discount Pop-up Lead Magnet
+* Upgraded VIP popup to offer **10% Off First Order** on pantry items and workshops using promo code `WELCOME10` (specifically excludes recurring monthly subscriptions per Tam's request).
+* Cart drawer automatically applies the 10% discount to eligible non-subscription items and displays the discount line item.

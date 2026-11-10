@@ -201,27 +201,25 @@
       </a>
 
       <!-- Desktop Nav Items (Restructured based on feedback) -->
-      <nav class="hidden lg:flex items-center space-x-6 text-xs font-medium uppercase tracking-widest text-[#2A2A2A]">
+      <nav class="hidden lg:flex items-center space-x-7 text-xs font-medium uppercase tracking-widest text-[#2A2A2A]">
         <button onclick="switchTab('home')" class="nav-btn py-2 border-b-2 border-black font-semibold text-black" id="nav-home">Home</button>
         
-        <!-- Weddings (Prioritized Micro-Site) -->
+        <!-- Weddings (Prioritized Boutique Focus) -->
         <button onclick="switchTab('weddings')" class="nav-btn py-2 border-b-2 border-transparent hover:text-black transition flex items-center gap-1.5" id="nav-weddings">
-          Weddings
-          <span class="text-[8px] bg-sage text-white px-1.5 py-0.5 rounded tracking-normal font-bold">Inquiries</span>
+          Cake House Weddings
+          <span class="text-[8px] bg-sage text-white px-1.5 py-0.5 rounded tracking-normal font-bold">Bespoke</span>
         </button>
 
-        <!-- Streamlined Baker's Box -->
-        <button onclick="switchTab('baking-boxes')" class="nav-btn py-2 border-b-2 border-transparent hover:text-black transition flex items-center gap-1.5" id="nav-baking-boxes">
-          Baker's Box
-          <span class="text-[8px] bg-black text-white px-1.5 py-0.5 rounded tracking-normal font-bold">50 Spots</span>
+        <!-- Cake House School (Classes) -->
+        <button onclick="switchTab('classes')" class="nav-btn py-2 border-b-2 border-transparent hover:text-black transition flex items-center gap-1.5" id="nav-classes">
+          Cake House School
+          <span class="text-[8px] bg-stone-100 text-stone-800 border border-stone-300 px-1.5 py-0.5 rounded tracking-normal font-semibold">Town Hall</span>
         </button>
 
-        <button onclick="switchTab('classes')" class="nav-btn py-2 border-b-2 border-transparent hover:text-black transition" id="nav-classes">Classes ($60)</button>
-        
-        <!-- Bi-Weekly Everyday Drops (Local Pickup Only) -->
-        <button onclick="switchTab('everyday')" class="nav-btn py-2 border-b-2 border-transparent hover:text-black transition flex items-center gap-1.5" id="nav-everyday">
-          Everyday Drops
-          <span class="text-[8px] bg-[#E6D8D7] text-black px-1.5 py-0.5 rounded tracking-normal font-bold">Local Pickup</span>
+        <!-- Cake House Pantry (Storefront) -->
+        <button onclick="switchTab('pantry')" class="nav-btn py-2 border-b-2 border-transparent hover:text-black transition flex items-center gap-1.5" id="nav-pantry">
+          Cake House Pantry
+          <span class="text-[8px] bg-black text-white px-1.5 py-0.5 rounded tracking-normal font-bold">Storefront</span>
         </button>
 
         <button onclick="switchTab('about')" class="nav-btn py-2 border-b-2 border-transparent hover:text-black transition" id="nav-about">About Me</button>
@@ -230,8 +228,8 @@
 
       <!-- Cart & Quick Actions -->
       <div class="flex items-center space-x-3">
-        <button onclick="openLeadModal()" class="hidden sm:inline-block text-[10px] uppercase tracking-wider font-semibold bg-[#F5EFEB] hover:bg-[#E6D8D7] text-[#1A1A1A] px-3 py-1.5 transition">
-          Free Recipe
+        <button onclick="openLeadModal()" class="hidden sm:inline-block text-[10px] uppercase tracking-wider font-semibold bg-sage-light hover:bg-[#D4E0D6] text-sage-dark border border-sage/30 px-3 py-1.5 transition">
+          10% Off First Order
         </button>
 
         <button onclick="toggleCartDrawer()" class="relative p-2 text-[#1A1A1A] hover:opacity-75 transition" aria-label="View Shopping Cart">
@@ -252,15 +250,14 @@
 
     <!-- Mobile Dropdown -->
     <div id="mobile-menu" class="hidden lg:hidden border-t border-[#ECECEC] bg-white px-6 py-4 space-y-3 text-xs uppercase tracking-widest font-medium">
-      <button onclick="switchTab('home'); toggleMobileMenu()" class="block w-full text-left py-1.5">Home</button>
-      <button onclick="switchTab('weddings'); toggleMobileMenu()" class="block w-full text-left py-1.5 font-bold text-sage">💍 Weddings & Inquiries</button>
-      <button onclick="switchTab('baking-boxes'); toggleMobileMenu()" class="block w-full text-left py-1.5 font-bold text-black">📦 The Monthly Baker's Box (50 Soft Launch Spots)</button>
-      <button onclick="switchTab('classes'); toggleMobileMenu()" class="block w-full text-left py-1.5">Cookie Classes ($60)</button>
-      <button onclick="switchTab('everyday'); toggleMobileMenu()" class="block w-full text-left py-1.5">Everyday Drops (Cinnamon Buns & Cookies - Local)</button>
+      <button onclick="switchTab('home'); toggleMobileMenu()" class="block w-full text-left py-1.5 font-semibold text-black">Home</button>
+      <button onclick="switchTab('weddings'); toggleMobileMenu()" class="block w-full text-left py-1.5 font-bold text-sage">💍 Cake House Weddings & Flavors</button>
+      <button onclick="switchTab('classes'); toggleMobileMenu()" class="block w-full text-left py-1.5 font-medium">🎓 Cake House School (Classes $60)</button>
+      <button onclick="switchTab('pantry'); toggleMobileMenu()" class="block w-full text-left py-1.5 font-bold text-black">🛒 Cake House Pantry (Storefront & Subscriptions)</button>
       <button onclick="switchTab('about'); toggleMobileMenu()" class="block w-full text-left py-1.5">About Me</button>
       <button onclick="switchTab('contact'); toggleMobileMenu()" class="block w-full text-left py-1.5">Contact & Studio Policy</button>
-      <button onclick="openLeadModal(); toggleMobileMenu()" class="w-full mt-2 bg-sage-dark text-white py-2.5 text-center text-xs tracking-wider">
-        Get Free Oreo Brookie Recipe
+      <button onclick="openLeadModal(); toggleMobileMenu()" class="w-full mt-2 bg-sage-dark text-white py-2.5 text-center text-xs tracking-wider font-semibold">
+        Get 10% Off First Order
       </button>
     </div>
   </header>
@@ -315,13 +312,13 @@
           </p>
           <div class="flex flex-wrap justify-center gap-3 pt-2">
             <button onclick="switchTab('weddings')" class="bg-sage hover:bg-sage-dark text-white text-xs uppercase tracking-widest px-6 py-3.5 transition font-semibold">
-              Explore Weddings & Inquiries →
+              Cake House Weddings & Flavors →
             </button>
-            <button onclick="switchTab('baking-boxes')" class="bg-[#1A1A1A] hover:bg-black text-white text-xs uppercase tracking-widest px-6 py-3.5 transition font-semibold">
-              The Monthly Baker's Box (50 Spots)
+            <button onclick="switchTab('classes')" class="bg-white hover:bg-[#F7F7F7] border border-[#1A1A1A] text-[#1A1A1A] text-xs uppercase tracking-widest px-6 py-3.5 transition font-semibold">
+              Cake House School ($60)
             </button>
-            <button onclick="switchTab('classes')" class="bg-white hover:bg-[#F7F7F7] border border-[#1A1A1A] text-[#1A1A1A] text-xs uppercase tracking-widest px-6 py-3.5 transition">
-              Book Cookie Classes ($60)
+            <button onclick="switchTab('pantry')" class="bg-[#1A1A1A] hover:bg-black text-white text-xs uppercase tracking-widest px-6 py-3.5 transition font-semibold">
+              Cake House Pantry Storefront →
             </button>
           </div>
         </div>
@@ -577,8 +574,28 @@
           </div>
         </div>
 
+        <!-- Sticky Quick Jump Bar for Wedding Sections -->
+        <div class="sticky top-24 z-30 bg-white/95 backdrop-blur-md py-3 px-4 border-y border-[#ECECEC] flex items-center justify-center gap-2 sm:gap-4 overflow-x-auto text-[11px] uppercase tracking-wider font-semibold">
+          <span class="text-stone-400 font-normal hidden md:inline">Jump To:</span>
+          <a href="#wedding-portfolio" onclick="document.getElementById('wedding-portfolio').scrollIntoView({behavior: 'smooth'})" class="px-3.5 py-1.5 rounded-full bg-stone-100 hover:bg-stone-200 text-stone-800 transition whitespace-nowrap">
+            ✦ Featured Showpieces
+          </a>
+          <a href="#wedding-flavors" onclick="document.getElementById('wedding-flavors').scrollIntoView({behavior: 'smooth'})" class="px-3.5 py-1.5 rounded-full bg-sage-light hover:bg-[#D4E0D6] text-sage-dark font-bold transition whitespace-nowrap border border-sage/30">
+            🎂 Flavors & Fillings
+          </a>
+          <a href="#wedding-pricing-guide" onclick="document.getElementById('wedding-pricing-guide').scrollIntoView({behavior: 'smooth'})" class="px-3.5 py-1.5 rounded-full bg-stone-100 hover:bg-stone-200 text-stone-800 transition whitespace-nowrap">
+            📋 Investment Guide
+          </a>
+          <a href="#wedding-tasting-box" onclick="document.getElementById('wedding-tasting-box').scrollIntoView({behavior: 'smooth'})" class="px-3.5 py-1.5 rounded-full bg-stone-100 hover:bg-stone-200 text-stone-800 transition whitespace-nowrap">
+            🎁 Tasting Box ($45)
+          </a>
+          <a href="#wedding-inquiry-form" onclick="document.getElementById('wedding-inquiry-form').scrollIntoView({behavior: 'smooth'})" class="px-3.5 py-1.5 rounded-full bg-black text-white hover:bg-stone-800 transition whitespace-nowrap">
+            ✉️ Date Inquiry
+          </a>
+        </div>
+
         <!-- 📸 Full-Width High-Resolution Masonry Portfolio Gallery -->
-        <div class="space-y-6">
+        <div id="wedding-portfolio" class="space-y-6">
           <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b border-[#ECECEC] pb-4 gap-2">
             <div>
               <span class="text-xs uppercase tracking-widest-plus text-sage font-bold block">Portfolio Gallery</span>
@@ -924,159 +941,10 @@
     <!-- TAB 3: THE MONTHLY BAKER'S BOX -->
     <!-- (Streamlined based on feedback: 50 Soft Launch Spots, New York Style Cookies + Brownies) -->
     <!-- ========================================== -->
-    <div id="view-baking-boxes" class="tab-view hidden">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
-        
-        <!-- Header -->
-        <div class="text-center max-w-3xl mx-auto space-y-4">
-          <div class="inline-block bg-sage text-white text-[10px] uppercase tracking-widest font-bold px-3 py-1">
-            Soft Launch Limited Edition • 50 Boxes Total
-          </div>
-          <h1 class="font-serif text-4xl sm:text-6xl font-normal text-[#1A1A1A] tracking-tight">
-            The Monthly Baker's Box
-          </h1>
-          <p class="text-xs sm:text-sm text-[#505050] leading-relaxed">
-            Fresh, indulgent artisanal bakes engineered specifically for Canadian shipping. Featuring our giant New York-style stuffed cookies and rich fudge brownies, delivered right to your door every month.
-          </p>
-          <div class="flex flex-wrap justify-center gap-4 text-xs font-semibold pt-2 text-stone-600">
-            <span>📦 Ships Canada-Wide</span>
-            <span>•</span>
-            <span>🏡 Free Norwood Studio Pickup</span>
-            <span>•</span>
-            <span>🔒 Limited to First 50 Subscribers</span>
-          </div>
-        </div>
-
-        <!-- 50-Spot Capacity Counter / Urgency Banner -->
-        <div class="bg-sage-light border border-sage p-5 max-w-2xl mx-auto flex items-center justify-between gap-4">
-          <div class="space-y-1">
-            <span class="text-xs uppercase tracking-widest font-bold text-sage-dark block">SOFT LAUNCH ALLOCATION</span>
-            <p class="text-xs text-stone-700">December promotions & waitlist • First boxes dispatch <strong>January 2027</strong></p>
-          </div>
-          <div class="text-right">
-            <span class="text-2xl font-serif font-bold text-sage-dark">18 / 50</span>
-            <span class="text-[10px] uppercase tracking-wider block text-stone-500">Spots Claimed</span>
-          </div>
-        </div>
-
-        <!-- The Product Component -->
-        <div class="bg-white border-2 border-black p-8 sm:p-12 shadow-sm grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-          
-          <div class="md:col-span-6 space-y-4">
-            <div class="aspect-square bg-stone-100 overflow-hidden border border-[#E0E0E0] shadow-sm">
-              <img 
-                src="./assets/images/bakers-box.jpg" 
-                alt="The Monthly Baker's Box with 6 Stuffed Cookies and 6 Fudge Brownies" 
-                class="w-full h-full object-cover"
-              />
-            </div>
-            <div class="bg-[#F7F7F7] p-4 text-xs space-y-2 border border-[#E0E0E0]">
-              <span class="font-bold uppercase tracking-wider text-[10px] text-black block">What's Inside The Box (12 Total Treats — $50+ Value):</span>
-              <ul class="space-y-1.5 text-stone-600 text-[11px]">
-                <li class="flex items-start gap-1.5">
-                  <span class="text-sage font-bold">✓</span>
-                  <span><strong>6 Giant New York Style Stuffed Cookies:</strong> ($6/ea value) Tall, thick, with luscious molten internal fillings that stay fresh and intact during transit.</span>
-                </li>
-                <li class="flex items-start gap-1.5">
-                  <span class="text-sage font-bold">✓</span>
-                  <span><strong>6 Decadent Gourmet Fudge Brownies:</strong> Ultra-fudgy Belgian dark chocolate brownie squares with rich cocoa notes and glossy crinkle tops.</span>
-                </li>
-                <li class="flex items-start gap-1.5">
-                  <span class="text-sage font-bold">✓</span>
-                  <span><strong>Individually Sealed Packaging:</strong> Heat-sealed for maximum freshness upon arrival with signature CakeHouse gift box and baker's twine.</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Configuration & Purchasing Controls -->
-          <div class="md:col-span-6 space-y-6">
-            <div>
-              <span class="text-[10px] uppercase tracking-widest font-bold text-stone-400">Exclusive Monthly Feature</span>
-              <h2 class="font-serif text-3xl font-normal text-black mt-1">The Baker's Box</h2>
-              <p class="text-xs text-stone-500 mt-1">Available for tracked shipping across Canada or Norwood pickup.</p>
-            </div>
-
-            <!-- Billing Plan Selector -->
-            <div class="space-y-2 text-xs">
-              <label class="block font-semibold uppercase tracking-wider text-[10px] text-stone-700">Choose Your Plan:</label>
-              <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
-                
-                <!-- 3-Month Plan (Recommended) -->
-                <label class="border-2 border-sage bg-sage-light/40 p-3 text-center cursor-pointer block relative">
-                  <span class="absolute -top-2 left-1/2 transform -translate-x-1/2 bg-sage text-white text-[8px] font-bold uppercase px-1.5 py-0.2 rounded">Recommended</span>
-                  <input type="radio" name="baker_plan" value="3month" checked onchange="updateBakersBoxPricing(42.00, '3-Month Plan (Save 15%)')" class="hidden">
-                  <span class="block font-bold text-xs mt-1">$42.00/mo</span>
-                  <span class="text-[9px] text-sage font-bold uppercase">3-Month Term</span>
-                  <span class="text-[9px] block text-stone-400">Guarantees Spot</span>
-                </label>
-
-                <!-- 1-Month Plan -->
-                <label class="border border-[#CCCCCC] p-3 text-center cursor-pointer block hover:border-black">
-                  <input type="radio" name="baker_plan" value="monthly" onchange="updateBakersBoxPricing(48.00, 'Monthly Billing Plan')" class="hidden">
-                  <span class="block font-bold text-xs mt-1">$48.00/mo</span>
-                  <span class="text-[9px] text-stone-600 uppercase">Monthly</span>
-                  <span class="text-[9px] block text-stone-400">Cancel Anytime</span>
-                </label>
-
-                <!-- One-Time Gift -->
-                <label class="border border-[#CCCCCC] p-3 text-center cursor-pointer block hover:border-black">
-                  <input type="radio" name="baker_plan" value="onetime" onchange="updateBakersBoxPricing(52.00, 'One-Time Gift Box')" class="hidden">
-                  <span class="block font-bold text-xs mt-1">$52.00</span>
-                  <span class="text-[9px] text-stone-600 uppercase">Single Gift</span>
-                  <span class="text-[9px] block text-stone-400">No Recurring</span>
-                </label>
-
-              </div>
-            </div>
-
-            <!-- Dietary Selection (Nut options removed, Gluten-Free with non-celiac disclaimer) -->
-            <div class="space-y-1.5 text-xs">
-              <label class="block font-semibold uppercase tracking-wider text-[10px] text-stone-700">Dietary Option:</label>
-              <select id="baker_diet" onchange="handleDietaryChange(this)" class="w-full p-2.5 border border-[#CCCCCC] bg-white text-xs focus:outline-none">
-                <option value="Classic">Classic Signature Recipe (Wheat/Dairy)</option>
-                <option value="Gluten-Free">Non-Celiac Gluten-Free (+ $6.00)</option>
-              </select>
-              <p id="dietary-warning" class="text-[10px] text-amber-800 bg-amber-50 p-2 border border-amber-200 hidden leading-tight">
-                ⚠️ <strong>Note:</strong> Prepared in a kitchen that handles wheat and gluten. While made with gluten-free ingredients, this is <strong>not a certified celiac-safe facility</strong>.
-              </p>
-              <p class="text-[10px] text-stone-500 italic">
-                * Note: The CakeHouse is not a nut-free facility. We cannot offer peanut/nut-free options due to cross-contamination.
-              </p>
-            </div>
-
-            <!-- Wayward Gent Upsell directly in box configuration (From Transcript) -->
-            <div class="pt-2 border-t border-[#ECECEC]">
-              <label class="flex items-start space-x-3 p-3 bg-[#F7F7F7] border border-[#ECECEC] hover:border-sage cursor-pointer transition">
-                <input type="checkbox" id="baker-addon-cocktail" onchange="toggleBoxCocktailAddon(this)" class="w-4 h-4 text-sage mt-0.5">
-                <div class="flex-1 text-xs">
-                  <span class="font-bold text-[#1A1A1A] block uppercase tracking-wider">Add Wayward Gent Cocktail Infusion Jar</span>
-                  <span class="text-stone-500 text-[11px]">Artisan dehydrated botanicals in reusable mason jar. Simply add spirit!</span>
-                </div>
-                <span class="text-xs font-bold text-black whitespace-nowrap">+$18.00</span>
-              </label>
-            </div>
-
-            <!-- Price & Button -->
-            <div class="space-y-3 pt-4 border-t border-[#ECECEC]">
-              <div class="flex justify-between items-baseline">
-                <span class="text-[10px] uppercase tracking-widest text-stone-500">Box Total:</span>
-                <span id="baker_price_display" class="font-serif text-3xl font-bold text-black">$42.00 CAD</span>
-              </div>
-              <button onclick="addBakersBoxToCart()" class="w-full bg-[#1A1A1A] hover:bg-black text-white py-4 text-xs uppercase tracking-widest font-semibold transition">
-                Subscribe to The Baker's Box
-              </button>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-
+    <!-- ALIAS STUB: BAKING BOXES (Redirects to Pantry) -->
     <!-- ========================================== -->
-    <!-- TAB 4: CLASSES & WORKSHOPS (AUTOMATED 5-SEAT TRIGGER) -->
+    <div id="view-baking-boxes" class="hidden"></div>
+
     <!-- ========================================== -->
     <div id="view-classes" class="tab-view hidden">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
@@ -1219,91 +1087,332 @@
     <!-- TAB 5: EVERYDAY DROPS (BI-WEEKLY LOCAL PICKUP PRE-ORDERS) -->
     <!-- (Updated based on Tammy's feedback: Bi-weekly alternating Cinnamon Buns & Cookies, LOCAL PICKUP ONLY, No shipping) -->
     <!-- ========================================== -->
-    <div id="view-everyday" class="tab-view hidden">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
+    <!-- TAB: CAKE HOUSE PANTRY (THE STOREFRONT) -->
+    <!-- (Realigned to Nov 9 Strategic Architecture: Fast-paced storefront for subscriptions, weekly drops & pantry goods) -->
+    <!-- ========================================== -->
+    <div id="view-pantry" class="tab-view hidden">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 space-y-16">
         
-        <div class="text-center max-w-2xl mx-auto space-y-3">
-          <div class="inline-block bg-sage-light text-sage text-[10px] uppercase tracking-widest font-bold px-3 py-1">
-            Bi-Weekly Pre-Orders • Local Norwood Pickup Only
+        <!-- Storefront Header & Bridge Notice -->
+        <div class="text-center max-w-3xl mx-auto space-y-4">
+          <div class="inline-block bg-black text-white text-[10px] uppercase tracking-widest font-bold px-3 py-1">
+            Online Storefront • Ships Canada-Wide & Local Norwood Pickup
           </div>
-          <h1 class="font-serif text-4xl sm:text-5xl font-normal text-[#1A1A1A]">Everyday Bakes & Pre-Orders</h1>
-          <p class="text-xs text-[#505050] leading-relaxed">
-            Freshly prepared for scheduled weekend studio pickups in Norwood. Our fresh drops alternate on a bi-weekly rhythm: <strong>Week A features warm Brioche Cinnamon Buns</strong>, and <strong>Week B features signature Market Cookies & Cupcakes</strong>.
+          <h1 class="font-serif text-4xl sm:text-6xl font-normal text-black tracking-tight leading-none">
+            The CakeHouse Pantry
+          </h1>
+          <p class="font-serif italic text-xl sm:text-2xl text-stone-600">
+            Artisanal Subscriptions, Bi-Weekly Bakes & Pantry Provisions
           </p>
-          <div class="p-2.5 bg-amber-50 text-amber-900 text-[11px] font-semibold border border-amber-200 inline-block">
-            ⚠️ Fresh bakes do not ship! Local Norwood pickup only. For Canadian shipping, explore our Baker's Box.
+          <p class="text-xs sm:text-sm text-[#505050] max-w-2xl mx-auto leading-relaxed">
+            Our fast-paced e-commerce shop: reserve Canada-wide shippable Baker's Box subscriptions, order fresh bi-weekly drop favorites for studio pickup, and shop handcrafted cocktail provisions.
+          </p>
+
+          <!-- Bridge Banner Back to Weddings & School -->
+          <div class="bg-stone-50 border border-stone-200 p-3.5 flex flex-wrap items-center justify-between gap-3 text-left">
+            <div class="flex items-center gap-2">
+              <span class="text-base">💍</span>
+              <p class="text-xs text-stone-700">
+                Planning a wedding or looking for Town Hall decorating workshops?
+              </p>
+            </div>
+            <div class="flex gap-3">
+              <button onclick="switchTab('weddings')" class="text-xs font-semibold uppercase tracking-wider text-sage hover:underline">
+                Cake House Weddings ↗
+              </button>
+              <span class="text-stone-300">|</span>
+              <button onclick="switchTab('classes')" class="text-xs font-semibold uppercase tracking-wider text-black hover:underline">
+                Cake House School ↗
+              </button>
+            </div>
+          </div>
+
+          <!-- Pantry Category Filter Pills -->
+          <div class="flex flex-wrap justify-center gap-2 pt-4" id="pantry-filter-buttons">
+            <button onclick="filterPantryItems('all', this)" class="pantry-btn px-4 py-2 text-xs uppercase tracking-wider font-bold bg-black text-white transition">
+              All Offerings
+            </button>
+            <button onclick="filterPantryItems('subscription', this)" class="pantry-btn px-4 py-2 text-xs uppercase tracking-wider font-semibold bg-white text-black border border-stone-300 hover:border-black transition">
+              📦 The Baker's Box (Subscriptions)
+            </button>
+            <button onclick="filterPantryItems('drops', this)" class="pantry-btn px-4 py-2 text-xs uppercase tracking-wider font-semibold bg-white text-black border border-stone-300 hover:border-black transition">
+              🥐 Bi-Weekly Drops (Norwood Pickup)
+            </button>
+            <button onclick="filterPantryItems('bar-kits', this)" class="pantry-btn px-4 py-2 text-xs uppercase tracking-wider font-semibold bg-white text-black border border-stone-300 hover:border-black transition">
+              🍸 Cocktail Provisions (Wayward Gent)
+            </button>
           </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
-          <!-- Cinnamon Buns Plain 6-Pack -->
-          <div class="border border-[#ECECEC] bg-white p-6 space-y-4 flex flex-col justify-between">
-            <div class="space-y-3">
-              <div class="aspect-square bg-stone-100 overflow-hidden">
-                <img src="https://static.wixstatic.com/media/df6fbe_9e3eea1d54f54045ab0b910a9067ff1a~mv2.png" alt="Brioche Cinnamon Buns Norwood" class="w-full h-full object-cover">
+        <!-- PRODUCT 1: The Monthly Baker's Box (Streamlined to 1 Single Simple Subscription) -->
+        <div class="pantry-item bg-[#FBF9F7] border border-[#E6D8D7] p-6 sm:p-10 shadow-sm" data-category="subscription">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            
+            <div class="lg:col-span-5 space-y-3">
+              <div class="aspect-square bg-white border border-[#E0E0E0] overflow-hidden">
+                <img 
+                  src="./assets/images/bakers-box.jpg" 
+                  alt="The Monthly Baker's Box with 6 Cookies and 6 Brownies" 
+                  class="w-full h-full object-cover hover:scale-105 transition duration-500"
+                />
               </div>
-              <div class="flex justify-between items-baseline pt-1">
-                <h3 class="font-serif text-lg font-normal text-black">Classic Cinnamon Buns (6pk)</h3>
-                <span class="font-bold text-xs">$24.00</span>
+              <div class="flex items-center justify-between text-[11px] text-[#505050]">
+                <span class="font-semibold uppercase tracking-wider text-black">🇨🇦 Ships Across Canada</span>
+                <span class="bg-black text-white text-[9px] font-bold px-2 py-0.5 uppercase tracking-widest">Capped at 50 Spots</span>
               </div>
-              <span class="text-[9px] uppercase tracking-wider font-bold bg-stone-100 text-stone-600 px-2 py-0.5">Week A Drop</span>
-              <p class="text-xs text-stone-500 leading-relaxed">
-                Slow-fermented brioche dough rolled with Saigon cinnamon and drenched in pure vanilla bean cream cheese glaze.
-              </p>
             </div>
-            <button onclick="addToCart('Classic Brioche Cinnamon Buns (6pk)', 24.00, 'Fresh Drop (Bi-Weekly)', 'Norwood Studio Pickup Only')" class="w-full bg-[#1A1A1A] hover:bg-black text-white py-3 text-xs uppercase tracking-widest font-semibold transition">
-              Pre-Order ($24)
-            </button>
-          </div>
 
-          <!-- Cinnamon Buns Assorted Mix 6-Pack -->
-          <div class="border border-[#ECECEC] bg-white p-6 space-y-4 flex flex-col justify-between">
-            <div class="space-y-3">
-              <div class="aspect-square bg-stone-100 overflow-hidden">
-                <img src="https://static.wixstatic.com/media/df6fbe_56b89c2482a24568bf77da347c828258~mv2.png" alt="Assorted Cinnamon Buns Norwood" class="w-full h-full object-cover">
+            <div class="lg:col-span-7 space-y-6">
+              <div class="space-y-2">
+                <div class="flex flex-wrap items-center gap-2">
+                  <span class="bg-sage text-white text-[9px] font-bold px-2.5 py-0.5 uppercase tracking-widest">Flagship Subscription</span>
+                  <span class="bg-stone-200 text-stone-800 text-[9px] font-bold px-2 py-0.5 uppercase">Zero Waste Batching</span>
+                </div>
+                <h2 class="font-serif text-3xl sm:text-4xl font-normal text-[#1A1A1A]">
+                  The Monthly Baker's Box
+                </h2>
+                <p class="text-xs sm:text-sm text-[#505050] leading-relaxed">
+                  Engineered specifically for transit across Canada. Each monthly box delivers <strong>6 giant New York-style stuffed cookies</strong> and <strong>6 gourmet fudge brownies</strong> (12 decadent treats total) baked fresh in Norwood.
+                </p>
               </div>
-              <div class="flex justify-between items-baseline pt-1">
-                <h3 class="font-serif text-lg font-normal text-black">Assorted Cinnamon Buns (6pk)</h3>
-                <span class="font-bold text-xs">$28.00</span>
+
+              <!-- Streamlined Single Subscription Plan (Nov 9 Session Alignment) -->
+              <div class="space-y-3">
+                <label class="block text-xs uppercase tracking-wider font-bold text-black">
+                  Select Subscription or Single Gift Box:
+                </label>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  
+                  <!-- Option A: Standard Monthly (Recommended, Simple) -->
+                  <div onclick="updateBakersBoxPricing(48.00, 'Monthly Subscription', this)" id="plan-monthly" class="bakers-plan-card border-2 border-black bg-white p-4 cursor-pointer transition relative">
+                    <div class="absolute -top-2.5 right-3 bg-sage text-white text-[8px] uppercase tracking-widest font-bold px-2 py-0.5">
+                      Recommended
+                    </div>
+                    <div class="flex justify-between items-baseline">
+                      <span class="text-xs uppercase tracking-wider font-bold text-black">Monthly Subscription</span>
+                      <span class="text-sm font-bold text-black">$48.00 <span class="text-[10px] text-stone-500 font-normal">/ mo</span></span>
+                    </div>
+                    <p class="text-[11px] text-stone-600 mt-1 leading-normal">
+                      Billed monthly. Auto-renews. Skip a month or cancel anytime via self-serve customer portal.
+                    </p>
+                  </div>
+
+                  <!-- Option B: One-Time Gift Box -->
+                  <div onclick="updateBakersBoxPricing(52.00, 'One-Time Gift Box', this)" id="plan-onetime" class="bakers-plan-card border border-stone-300 bg-white p-4 cursor-pointer hover:border-black transition">
+                    <div class="flex justify-between items-baseline">
+                      <span class="text-xs uppercase tracking-wider font-bold text-black">One-Time Gift Box</span>
+                      <span class="text-sm font-bold text-black">$52.00</span>
+                    </div>
+                    <p class="text-[11px] text-stone-600 mt-1 leading-normal">
+                      Single box order. No recurring subscription. Perfect for holiday gifting.
+                    </p>
+                  </div>
+
+                </div>
               </div>
-              <span class="text-[9px] uppercase tracking-wider font-bold bg-sage-light text-sage px-2 py-0.5">6 Gourmet Toppings</span>
-              <p class="text-xs text-stone-500 leading-relaxed">
-                6 unique artisan toppings including Salted Caramel Pecan, Raspberry Cream, Oreo Crumble, Apple Pie, and Maple Cream.
-              </p>
+
+              <!-- Dietary Formulation Selector -->
+              <div class="space-y-2">
+                <label for="baker_diet" class="block text-xs uppercase tracking-wider font-bold text-black">
+                  Dietary Selection:
+                </label>
+                <select id="baker_diet" onchange="handleDietaryChange(this)" class="w-full text-xs p-3 border border-stone-300 bg-white font-medium focus:outline-none focus:border-black">
+                  <option value="Classic Recipe">Classic Signature Recipe (Real Butter & Fine Chocolate)</option>
+                  <option value="Gluten-Free">Non-Celiac Gluten-Free Formulation (+ $6.00 CAD)</option>
+                  <option value="Vegan-Friendly">Vegan-Friendly Plant-Based Batch (Dairy & Egg-Free)</option>
+                </select>
+                <p id="dietary-warning" class="text-[11px] text-amber-800 bg-amber-50 p-2 border border-amber-200 hidden leading-relaxed">
+                  ⚠️ <strong>Allergen Notice:</strong> Baked in a home studio kitchen that handles wheat flour, dairy, and eggs. Not certified celiac-safe.
+                </p>
+              </div>
+
+              <!-- Wayward Gent Cocktail Upsell Pairing -->
+              <div class="bg-white border border-[#ECECEC] p-4 flex items-center justify-between gap-4">
+                <div class="flex items-center space-x-3">
+                  <input type="checkbox" id="cocktail-jar-addon" onchange="toggleBoxCocktailAddon(this)" class="w-4 h-4 text-black border-stone-300 rounded focus:ring-0">
+                  <label for="cocktail-jar-addon" class="text-xs text-stone-800 cursor-pointer">
+                    <strong class="font-semibold">Add Wayward Gent Cocktail Infusion Jar (+ $18.00 CAD)</strong><br>
+                    <span class="text-[11px] text-stone-500">Handcrafted cocktail infusion jar from our sister brand. Just add your favorite spirit!</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Price Display & Add To Cart -->
+              <div class="pt-4 border-t border-[#E6D8D7] flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div>
+                  <span class="text-[10px] uppercase tracking-widest text-[#8C8C8C] block">Total Box Price</span>
+                  <span id="baker_price_display" class="font-serif text-3xl font-bold text-[#1A1A1A]">
+                    $48.00 CAD
+                  </span>
+                </div>
+                <button onclick="addBakersBoxToCart()" class="w-full sm:w-auto bg-black hover:bg-stone-800 text-white text-xs uppercase tracking-widest font-semibold px-8 py-4 transition flex items-center justify-center gap-2">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+                  <span>Reserve Box in Cart →</span>
+                </button>
+              </div>
+
             </div>
-            <button onclick="addToCart('Assorted Brioche Cinnamon Buns (6pk)', 28.00, 'Fresh Drop (Bi-Weekly)', 'Norwood Studio Pickup Only')" class="w-full bg-[#1A1A1A] hover:bg-black text-white py-3 text-xs uppercase tracking-widest font-semibold transition">
-              Pre-Order ($28)
-            </button>
           </div>
-
-          <!-- Market Cookie Variety Pack -->
-          <div class="border border-[#ECECEC] bg-white p-6 space-y-4 flex flex-col justify-between">
-            <div class="space-y-3">
-              <div class="aspect-square bg-stone-100 overflow-hidden">
-                <img src="https://static.wixstatic.com/media/df6fbe_de94a670542948168fb44bcfa50759e2~mv2.png" alt="Market Cookies Pack" class="w-full h-full object-cover">
-              </div>
-              <div class="flex justify-between items-baseline pt-1">
-                <h3 class="font-serif text-lg font-normal text-black">Market Cookie Box (6pk)</h3>
-                <span class="font-bold text-xs">$26.00</span>
-              </div>
-              <span class="text-[9px] uppercase tracking-wider font-bold bg-stone-100 text-stone-600 px-2 py-0.5">Week B Drop</span>
-              <p class="text-xs text-stone-500 leading-relaxed">
-                Our beloved flat market cookies with open fillings. Available in singles, custom counts, or this 6-cookie seasonal variety box.
-              </p>
-            </div>
-            <button onclick="addToCart('Market Cookie Variety Box (6pk)', 26.00, 'Fresh Drop (Bi-Weekly)', 'Norwood Studio Pickup Only')" class="w-full bg-[#1A1A1A] hover:bg-black text-white py-3 text-xs uppercase tracking-widest font-semibold transition">
-              Pre-Order ($26)
-            </button>
-          </div>
-
         </div>
+
+        <!-- PRODUCT 2: Bi-Weekly Everyday Drops (Local Pickup in Norwood) -->
+        <div class="pantry-item space-y-8 border-t border-[#ECECEC] pt-12" data-category="drops">
+          <div class="text-center max-w-2xl mx-auto space-y-2">
+            <div class="inline-block bg-[#E6D8D7] text-stone-900 text-[10px] uppercase tracking-widest font-bold px-3 py-1">
+              Norwood Studio Pickup Only • Fresh Bakes
+            </div>
+            <h2 class="font-serif text-3xl sm:text-4xl font-normal text-black">
+              Bi-Weekly Fresh Drops
+            </h2>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Warm, fresh brioche cinnamon buns and giant market cookies baked fresh in Norwood. Strictly scheduled studio pickup (no shipping for fresh bakes).
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <!-- Cinnamon Buns Classic -->
+            <div class="bg-white border border-stone-200 p-6 flex flex-col justify-between space-y-4 hover:border-black transition">
+              <div class="space-y-3">
+                <div class="aspect-[4/3] bg-stone-100 overflow-hidden">
+                  <img src="https://static.wixstatic.com/media/df6fbe_9e3eea1d54f54045ab0b910a9067ff1a~mv2.png/v1/fit/w_480,h_640,q_90,enc_avif,quality_auto/df6fbe_9e3eea1d54f54045ab0b910a9067ff1a~mv2.png" alt="Brioche Cinnamon Buns" class="w-full h-full object-cover">
+                </div>
+                <div class="flex justify-between items-start">
+                  <h3 class="font-serif text-xl font-normal text-black">Brioche Cinnamon Buns</h3>
+                  <span class="text-sm font-bold text-black">$24.00</span>
+                </div>
+                <p class="text-xs text-stone-600 leading-relaxed">
+                  Classic 6-Pack of fluffy brioche cinnamon buns smothered in real vanilla bean cream cheese frosting.
+                </p>
+              </div>
+              <button onclick="addToCart('Brioche Cinnamon Buns (Classic 6-Pack)', 24.00, 'Pre-Sale', 'Studio Pickup Only')" class="w-full bg-stone-100 hover:bg-black hover:text-white text-black text-xs uppercase tracking-wider py-2.5 font-semibold transition">
+                Add to Cart ($24)
+              </button>
+            </div>
+
+            <!-- Cinnamon Buns Gourmet Assorted -->
+            <div class="bg-white border border-stone-200 p-6 flex flex-col justify-between space-y-4 hover:border-black transition">
+              <div class="space-y-3">
+                <div class="aspect-[4/3] bg-stone-100 overflow-hidden">
+                  <img src="https://static.wixstatic.com/media/df6fbe_9e3eea1d54f54045ab0b910a9067ff1a~mv2.png/v1/fit/w_480,h_640,q_90,enc_avif,quality_auto/df6fbe_9e3eea1d54f54045ab0b910a9067ff1a~mv2.png" alt="Gourmet Assorted Cinnamon Buns" class="w-full h-full object-cover">
+                </div>
+                <div class="flex justify-between items-start">
+                  <h3 class="font-serif text-xl font-normal text-black">Gourmet Assorted Buns</h3>
+                  <span class="text-sm font-bold text-black">$28.00</span>
+                </div>
+                <p class="text-xs text-stone-600 leading-relaxed">
+                  Assorted 6-Pack featuring 2 Classic, 2 Salted Caramel Pecan, and 2 Brown Butter Crumble brioche buns.
+                </p>
+              </div>
+              <button onclick="addToCart('Gourmet Assorted Brioche Buns (6-Pack)', 28.00, 'Pre-Sale', 'Studio Pickup Only')" class="w-full bg-stone-100 hover:bg-black hover:text-white text-black text-xs uppercase tracking-wider py-2.5 font-semibold transition">
+                Add to Cart ($28)
+              </button>
+            </div>
+
+            <!-- Market Cookie 6-Pack -->
+            <div class="bg-white border border-stone-200 p-6 flex flex-col justify-between space-y-4 hover:border-black transition">
+              <div class="space-y-3">
+                <div class="aspect-[4/3] bg-stone-100 overflow-hidden">
+                  <img src="https://static.wixstatic.com/media/df6fbe_de94a670542948168fb44bcfa50759e2~mv2.png/v1/fit/w_480,h_640,q_90,enc_avif,quality_auto/df6fbe_de94a670542948168fb44bcfa50759e2~mv2.png" alt="Market Cookies" class="w-full h-full object-cover">
+                </div>
+                <div class="flex justify-between items-start">
+                  <h3 class="font-serif text-xl font-normal text-black">Market Cookie 6-Pack</h3>
+                  <span class="text-sm font-bold text-black">$22.00</span>
+                </div>
+                <p class="text-xs text-stone-600 leading-relaxed">
+                  Half-dozen giant stuffed cookies (Oreo Brookie, Chocolate Chunk Sea Salt, and Red Velvet Cream Cheese).
+                </p>
+              </div>
+              <button onclick="addToCart('Market Cookie 6-Pack', 22.00, 'Pre-Sale', 'Studio Pickup Only')" class="w-full bg-stone-100 hover:bg-black hover:text-white text-black text-xs uppercase tracking-wider py-2.5 font-semibold transition">
+                Add to Cart ($22)
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- PRODUCT 3: Artisan Bar Provisions & Cocktail Kits (Wayward Gent Sister Brand) -->
+        <div class="pantry-item space-y-8 border-t border-[#ECECEC] pt-12" data-category="bar-kits">
+          <div class="text-center max-w-2xl mx-auto space-y-2">
+            <div class="inline-block bg-sage-light text-sage text-[10px] uppercase tracking-widest font-bold px-3 py-1">
+              Sister Brand Collaboration • Handpacked in Norwood
+            </div>
+            <h2 class="font-serif text-3xl sm:text-4xl font-normal text-black">
+              Artisan Cocktail Provisions
+            </h2>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Handcrafted in our Norwood facility by Wayward Gent. Premium dehydrated cocktail infusions, freeze-dried syrups, and flavored rimmers.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Cocktail Jar 1: Old Fashioned -->
+            <div class="bg-white border border-stone-200 p-6 flex flex-col justify-between space-y-4 hover:border-sage transition">
+              <div class="space-y-3">
+                <div class="aspect-square bg-stone-100 flex items-center justify-center p-6 border border-stone-100">
+                  <span class="text-5xl">🥃</span>
+                </div>
+                <div class="flex justify-between items-start">
+                  <h3 class="font-serif text-lg font-normal text-black">Old Fashioned Infusion Jar</h3>
+                  <span class="text-sm font-bold text-black">$18.00</span>
+                </div>
+                <p class="text-xs text-stone-600 leading-relaxed">
+                  Dehydrated navel orange wheels, organic bitters-infused cane sugar, and sweet dark cherries. Just add bourbon or rye!
+                </p>
+              </div>
+              <button onclick="addToCart('Wayward Gent Cocktail Jar (Old Fashioned)', 18.00, 'Pantry', 'Ships Canada-Wide')" class="w-full bg-stone-100 hover:bg-sage hover:text-white text-black text-xs uppercase tracking-wider py-2.5 font-semibold transition">
+                Add to Cart ($18)
+              </button>
+            </div>
+
+            <!-- Cocktail Jar 2: Berry Mule -->
+            <div class="bg-white border border-stone-200 p-6 flex flex-col justify-between space-y-4 hover:border-sage transition">
+              <div class="space-y-3">
+                <div class="aspect-square bg-stone-100 flex items-center justify-center p-6 border border-stone-100">
+                  <span class="text-5xl">🍓</span>
+                </div>
+                <div class="flex justify-between items-start">
+                  <h3 class="font-serif text-lg font-normal text-black">Wild Berry Mule Infusion Jar</h3>
+                  <span class="text-sm font-bold text-black">$18.00</span>
+                </div>
+                <p class="text-xs text-stone-600 leading-relaxed">
+                  Ontario blackberries, raspberries, dehydrated lime, and spicy crystallized ginger root. Add vodka and ginger beer.
+                </p>
+              </div>
+              <button onclick="addToCart('Wayward Gent Cocktail Jar (Wild Berry Mule)', 18.00, 'Pantry', 'Ships Canada-Wide')" class="w-full bg-stone-100 hover:bg-sage hover:text-white text-black text-xs uppercase tracking-wider py-2.5 font-semibold transition">
+                Add to Cart ($18)
+              </button>
+            </div>
+
+            <!-- Cocktail Rimmer Tin -->
+            <div class="bg-white border border-stone-200 p-6 flex flex-col justify-between space-y-4 hover:border-sage transition">
+              <div class="space-y-3">
+                <div class="aspect-square bg-stone-100 flex items-center justify-center p-6 border border-stone-100">
+                  <span class="text-5xl">✨</span>
+                </div>
+                <div class="flex justify-between items-start">
+                  <h3 class="font-serif text-lg font-normal text-black">Artisan Cocktail Rimmer Tin</h3>
+                  <span class="text-sm font-bold text-black">$10.00</span>
+                </div>
+                <p class="text-xs text-stone-600 leading-relaxed">
+                  Citrus Sugar & Spiced Salt glass rimmer tins crafted for margaritas, spritzers, and festive holiday glasses.
+                </p>
+              </div>
+              <button onclick="addToCart('Handcrafted Cocktail Rimmer Tin', 10.00, 'Pantry', 'Ships Canada-Wide')" class="w-full bg-stone-100 hover:bg-sage hover:text-white text-black text-xs uppercase tracking-wider py-2.5 font-semibold transition">
+                Add to Cart ($10)
+              </button>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </div>
 
-    <!-- ========================================== -->
-    <!-- TAB 6: ABOUT ME -->
-    <!-- ========================================== -->
+    <!-- Legacy Alias Anchors so old references do not break -->
+    <div id="view-everyday" class="hidden"></div>
+<!-- ========================================== -->
     <div id="view-about" class="tab-view hidden">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
         <div class="text-center space-y-3">
@@ -1508,54 +1617,51 @@
   </div>
 
   <!-- ========================================== -->
-  <!-- LEAD MAGNET MODAL (Free Oreo Brookie Recipe) -->
+  <!-- LEAD MAGNET & 10% DISCOUNT MODAL (Requested in Nov 9 Session) -->
   <!-- ========================================== -->
-  <div id="lead-modal-overlay" class="fixed inset-0 bg-black/50 z-50 hidden flex items-center justify-center p-4">
-    <div class="bg-white max-w-lg w-full p-8 relative shadow-2xl border border-black">
+  <div id="lead-modal-overlay" class="fixed inset-0 bg-black/60 z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white max-w-lg w-full p-8 relative shadow-2xl border-2 border-black">
       <button onclick="closeLeadModal()" class="absolute top-5 right-5 text-stone-400 hover:text-black">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/></svg>
       </button>
 
       <div class="space-y-4 text-center">
         <div class="inline-block bg-sage-light text-sage text-[10px] uppercase tracking-widest font-bold px-2.5 py-0.5">
-          VIP BAKER'S CLUB
+          VIP BAKER'S CLUB • SHOW & WEBSITE SPECIAL
         </div>
-        <h3 class="font-serif text-3xl font-normal text-black">Free Oreo Brookie Recipe</h3>
+        <h3 class="font-serif text-3xl font-normal text-black">Enjoy 10% Off Your First Order</h3>
         <p class="text-xs text-stone-600 leading-relaxed max-w-sm mx-auto">
-          We'll send our step-by-step printable PDF recipe immediately, plus 7-day early bird notifications before our monthly Baker's Box and Town Hall classes open.
+          Sign up to unlock 10% off your first pantry pre-order or workshop ticket, plus get our step-by-step Free Oreo Brookie Recipe PDF and early access to monthly drops!
         </p>
 
-        <form onsubmit="event.preventDefault(); submitLeadModal();" class="space-y-3 text-left pt-2">
+        <form id="lead-modal-form" onsubmit="event.preventDefault(); submitLeadModal();" class="space-y-3 text-left pt-2">
           <div>
             <label class="block text-xs uppercase tracking-wider font-semibold mb-1">First Name</label>
             <input type="text" id="modal-lead-name" required placeholder="e.g. Sarah" class="w-full text-xs p-3 border border-[#CCCCCC] focus:outline-none focus:border-sage">
           </div>
           <div>
             <label class="block text-xs uppercase tracking-wider font-semibold mb-1">Email Address</label>
-            <input type="email" id="modal-lead-email" required placeholder="sarah@example.com" class="w-full text-xs p-3 border border-[#CCCCCC] focus:outline-none focus:border-sage">
+            <input type="email" id="modal-lead-email" required placeholder="e.g. sarah@example.com" class="w-full text-xs p-3 border border-[#CCCCCC] focus:outline-none focus:border-sage">
           </div>
-          <div>
-            <label class="block text-xs uppercase tracking-wider font-semibold mb-1">Primary Interest</label>
-            <select class="w-full text-xs p-3 border border-[#CCCCCC] focus:outline-none focus:border-sage">
-              <option>The Monthly Baker's Box (50 Soft Launch Spots)</option>
-              <option>Wedding Cakes & Tasting Inquiries</option>
-              <option>Cookie Decorating Workshops ($60)</option>
-              <option>Bi-Weekly Everyday Drops (Cinnamon Buns & Cookies)</option>
-            </select>
-          </div>
-          
-          <button type="submit" class="w-full mt-2 bg-sage hover:bg-sage-dark text-white py-3.5 text-xs uppercase tracking-widest font-semibold transition">
-            Send Me The Recipe PDF
+          <button type="submit" class="w-full bg-sage-dark hover:bg-black text-white text-xs uppercase tracking-widest font-semibold py-3.5 transition">
+            Claim 10% Off & Free Recipe →
           </button>
+          <p class="text-[10px] text-stone-400 text-center italic">
+            *10% discount applies to first pantry pre-orders & workshop tickets. Excludes ongoing monthly subscriptions.
+          </p>
         </form>
 
-        <div id="lead-success-msg" class="hidden bg-sage-light text-sage-dark text-xs p-3 border border-sage font-medium">
-          🎉 Recipe dispatched! Check your inbox for your instant download link.
+        <div id="lead-success-msg" class="hidden p-4 bg-sage-light border border-sage text-stone-800 text-xs space-y-2">
+          <p class="font-bold text-sm text-sage-dark">🎉 Welcome to the Club! Your 10% Code: <span class="bg-white px-2 py-1 font-mono text-black border border-sage">WELCOME10</span></p>
+          <p class="text-[11px]">Check your inbox for the printable Oreo Brookie recipe PDF.</p>
+          <button onclick="applyCouponCode('WELCOME10'); closeLeadModal();" class="mt-2 w-full bg-black text-white text-[10px] uppercase tracking-widest py-2 font-bold hover:bg-stone-800 transition">
+            Apply 10% Discount to My Cart Now →
+          </button>
         </div>
+
       </div>
     </div>
   </div>
-
   <!-- ========================================== -->
   <!-- WAYWARD GENT MODAL (Weddings & Sister Co) -->
   <!-- ========================================== -->
@@ -1616,13 +1722,22 @@
     let cart = [];
     let currentView = 'home';
 
-    // State for Baker's Box
-    let currentBakersPrice = 42.00;
-    let currentBakersPlan = '3-Month Plan (Save 15%)';
+    // State for Baker's Box (Streamlined to 1 plan initially: $48/mo + 1-time $52)
+    let currentBakersPrice = 48.00;
+    let currentBakersPlan = 'Monthly Subscription';
     let isGlutenFreeSelected = false;
     let isCocktailAddonSelected = false;
 
+    // Discount promo state (10% off lead magnet)
+    let promoDiscountRate = 0.0;
+    let appliedPromoCode = '';
+
     function switchTab(viewId) {
+      // Alias redirect: baking-boxes and everyday point to unified pantry storefront
+      if (viewId === 'baking-boxes' || viewId === 'everyday') {
+        viewId = 'pantry';
+      }
+
       currentView = viewId;
       document.querySelectorAll('.tab-view').forEach(el => el.classList.add('hidden'));
       const activeEl = document.getElementById('view-' + viewId);
@@ -1683,6 +1798,42 @@
       }, 3000);
     }
 
+    // Filter Wedding Cake Flavors
+    function filterWeddingFlavors(category, btn) {
+      document.querySelectorAll('.flavor-filter-btn').forEach(b => {
+        b.classList.remove('bg-sage', 'text-white', 'border-sage');
+        b.classList.add('bg-white', 'text-black', 'border-stone-300');
+      });
+      btn.classList.add('bg-sage', 'text-white', 'border-sage');
+      btn.classList.remove('bg-white', 'text-black', 'border-stone-300');
+
+      document.querySelectorAll('.flavor-card').forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category').includes(category)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // Filter Pantry Items
+    function filterPantryItems(category, btn) {
+      document.querySelectorAll('.pantry-btn').forEach(b => {
+        b.classList.remove('bg-black', 'text-white');
+        b.classList.add('bg-white', 'text-black', 'border-stone-300');
+      });
+      btn.classList.add('bg-black', 'text-white');
+      btn.classList.remove('bg-white', 'text-black', 'border-stone-300');
+
+      document.querySelectorAll('.pantry-item').forEach(item => {
+        if (category === 'all' || item.getAttribute('data-category') === category) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    }
+
     function addToCart(title, price, category, fulfilment) {
       cart.push({ id: Date.now(), title, price, category, fulfilment });
       renderCart();
@@ -1691,9 +1842,19 @@
     }
 
     // Baker's Box Pricing Logic
-    function updateBakersBoxPricing(basePrice, planLabel) {
+    function updateBakersBoxPricing(basePrice, planLabel, cardEl) {
       currentBakersPrice = basePrice;
       currentBakersPlan = planLabel;
+
+      document.querySelectorAll('.bakers-plan-card').forEach(c => {
+        c.classList.remove('border-2', 'border-black');
+        c.classList.add('border', 'border-stone-300');
+      });
+      if (cardEl) {
+        cardEl.classList.remove('border', 'border-stone-300');
+        cardEl.classList.add('border-2', 'border-black');
+      }
+
       calculateBakersBoxTotal();
     }
 
@@ -1760,6 +1921,18 @@
       renderCart();
     }
 
+    // Apply Coupon Code
+    function applyCouponCode(code) {
+      if (code.toUpperCase() === 'WELCOME10') {
+        promoDiscountRate = 0.10;
+        appliedPromoCode = 'WELCOME10';
+        renderCart();
+        showToast('10% Discount Code WELCOME10 Applied!', '🎉');
+      } else {
+        alert('Invalid promo code. Use WELCOME10 for 10% off eligible items.');
+      }
+    }
+
     function renderCart() {
       const container = document.getElementById('cart-items-container');
       const emptyState = document.getElementById('cart-empty-state');
@@ -1776,7 +1949,7 @@
         container.innerHTML = '';
         container.appendChild(emptyState);
         emptyState.classList.remove('hidden');
-        subtotalEl.innerText = '$0.00';
+        subtotalEl.innerText = '$0.00 CAD';
         checkoutBtn.disabled = true;
         upsellBlock.classList.add('hidden');
         return;
@@ -1792,11 +1965,18 @@
         upsellBlock.classList.add('hidden');
       }
 
-      let subtotal = 0;
+      let rawSubtotal = 0;
+      let eligibleForDiscountSubtotal = 0;
       let html = '';
 
       cart.forEach((item, index) => {
-        subtotal += item.price;
+        rawSubtotal += item.price;
+        // Subscriptions are excluded from the 10% discount per Tam's decision
+        const isSubscription = item.category.toLowerCase().includes('subscription');
+        if (!isSubscription) {
+          eligibleForDiscountSubtotal += item.price;
+        }
+
         html += `
           <div class="flex items-start justify-between p-3 bg-[#F7F7F7] border border-[#ECECEC]">
             <div class="space-y-1">
@@ -1805,13 +1985,31 @@
               <p class="text-[10px] text-stone-500">${item.fulfilment}</p>
               <div class="font-serif text-sm font-normal text-black">$${item.price.toFixed(2)} CAD</div>
             </div>
-            <button onclick="removeFromCart(${index})" class="text-stone-400 hover:text-black text-xs p-1">✕</button>
+            <button onclick="removeFromCart(${index})" class="text-stone-400 hover:text-black text-xs p-1" title="Remove item">✕</button>
           </div>
         `;
       });
 
+      // Calculate discount if promo applied
+      let discountAmount = 0;
+      if (promoDiscountRate > 0 && eligibleForDiscountSubtotal > 0) {
+        discountAmount = eligibleForDiscountSubtotal * promoDiscountRate;
+      }
+      let finalTotal = Math.max(0, rawSubtotal - discountAmount);
+
       container.innerHTML = html;
-      subtotalEl.innerText = `$${subtotal.toFixed(2)} CAD`;
+
+      // Update total display with discount if applicable
+      if (discountAmount > 0) {
+        subtotalEl.innerHTML = `
+          <div class="text-xs text-stone-500 font-normal">Subtotal: $${rawSubtotal.toFixed(2)}</div>
+          <div class="text-xs text-sage font-bold">- $${discountAmount.toFixed(2)} CAD (10% Code: ${appliedPromoCode})</div>
+          <div class="text-lg font-bold text-black mt-1">$${finalTotal.toFixed(2)} CAD</div>
+        `;
+      } else {
+        subtotalEl.innerText = `$${finalTotal.toFixed(2)} CAD`;
+      }
+
       checkoutBtn.disabled = false;
     }
 
@@ -1844,17 +2042,19 @@
     function submitInlineLead() {
       const email = document.getElementById('home-lead-email').value;
       if (!email || !email.includes('@')) return;
-      showToast('Oreo Brookie Recipe dispatched!', '🎁');
+      applyCouponCode('WELCOME10');
+      showToast('10% Promo Code WELCOME10 + Recipe Sent!', '🎁');
       document.getElementById('home-lead-email').value = '';
     }
 
     function submitLeadModal() {
+      const name = document.getElementById('modal-lead-name').value;
+      const email = document.getElementById('modal-lead-email').value;
+      if (!email) return;
+
+      document.getElementById('lead-modal-form').classList.add('hidden');
       document.getElementById('lead-success-msg').classList.remove('hidden');
-      showToast('Oreo Brookie Recipe sent!', '🎁');
-      setTimeout(() => {
-        closeLeadModal();
-        document.getElementById('lead-success-msg').classList.add('hidden');
-      }, 2500);
+      showToast('10% Promo Code WELCOME10 Unlocked!', '🎉');
     }
 
     // Default load
